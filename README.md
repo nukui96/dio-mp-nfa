@@ -1,160 +1,104 @@
-# 🤖 DIO Agent
+# 🧠 Segundo Cérebro: Governança de Dados e Pipelines de Machine Learning Anti-Vazamento
 
-> Seu mentor de Inteligência Artificial para aprender mais e melhor na [DIO](https://dio.me).
-
-O **DIO Agent** é um agente de IA que acompanha você na sua jornada de estudos. Ele conhece as experiências da DIO (Bootcamps, Formações, Cursos, Desafios e muito mais) e ajuda você a estudar com mais clareza, destravar desafios e entender qualquer conceito.
-
-E você não precisa instalar nada complicado. Em **3 passos simples**, o seu mentor de IA estará pronto para usar.
+> **Repositório do Desafio DIO: "Construindo um Segundo Cérebro com Gemini Notebook / NotebookLM"**  
+> **Tema:** Governança de Dados, Framework SEMMA e Engenharia de Pipelines Anti-Data-Leakage em Machine Learning.  
+> **Notebook Compartilhado:** [Acessar Gemini NotebookLM](https://notebook.google.com/notebook/60c6c132-1a74-4b1d-9e61-d044fed7af9f)
 
 ---
 
-## ✨ Antes de começar: dois conceitos rápidos
+## 🎯 1. Tema e Objetivo
 
-Para usar o DIO Agent, basta entender duas palavras. As duas estão no [Glossário completo](docs/glossary.md), mas aqui vai a versão rápida:
+### Frase de Objetivo
+> *"Servir como base de consulta técnica e governança analítica para desenhar pipelines modulares de preparação e validação de dados no Scikit-Learn e Pandas, fundamentados no ciclo SEMMA e garantindo transformações de variáveis estritamente reprodutíveis e blindadas contra data leakage entre treino e inferência."*
 
-- 🧠 **Agente de IA:** um chatbot comum responde perguntas, como um buscador mais esperto. Um *agente* de IA vai além: ele lê, planeja e executa passos para te ajudar a alcançar um objetivo. É a diferença entre alguém que te explica o caminho e alguém que caminha junto com você. O DIO Agent é um agente desse tipo: um tutor particular que acompanha a sua evolução.
-
-- 🖥️ **Harness:** é o programa onde a conversa com o agente acontece. Vale a comparação: o agente é o professor, e o harness é a sala de aula. O mesmo professor pode dar aula em salas diferentes. Por isso o DIO Agent funciona em qualquer harness: você escolhe a "sala" no Passo 1, e o seu mentor continua o mesmo.
-
-Pronto. Com isso já dá para começar.
+O foco central deste segundo cérebro é resolver a dor crítica de engenharia de dados em Machine Learning: a transição entre a análise exploratória (EDA) e a esteira de produção, evitando o vazamento temporal de dados (*data leakage*), o subajuste/superajuste (*bias-variance trade-off*) e quebras de schema durante a inferência.
 
 ---
 
-## 🎯 O que o DIO Agent faz por você
+## 📚 2. Fontes Selecionadas e Justificativa de Confiabilidade
 
-| Você precisa de... | O DIO Agent... |
-|--------------------|----------------|
-| Saber por onde começar | Monta um plano de estudos no seu ritmo |
-| Destravar um desafio | Te guia até a solução, sem entregar a resposta pronta |
-| Entender um conceito | Explica de forma simples, com analogias e exemplos |
+Para evitar o ruído de tutoriais genéricos e scripts descartáveis de internet, foram inseridas fontes em múltiplos formatos (vídeo, texto e código) submetidas a critérios rigorosos de corte técnico:
 
-Ele conhece os formatos da DIO: Bootcamps, Formações, Acelerações, Cursos, English4Tech, Desafios de Código, Desafios de Projeto, Desafios Criativos, Lives e Mentorias. Assim, as recomendações sempre apontam para algo que você já tem na plataforma.
-
----
-
-## 🚀 Comece em 3 passos
-
-### 1️⃣ Instale um Harness
-
-O harness é o programa que dá vida ao agente. Recomendamos o **Google Antigravity**, que tem limites de uso mais generosos para quem está começando. Mas qualquer harness moderno funciona.
-
-| Harness | Documentação oficial |
-|---------|----------------------|
-| Google Antigravity (recomendado) | https://antigravity.google/docs |
-| Claude Code | https://docs.claude.com/en/docs/claude-code |
-| Codex | https://developers.openai.com/codex |
-| OpenCode | https://opencode.ai/docs |
-| Hermes | https://hermes-agent.nousresearch.com/docs |
-
-Escolha um e siga o passo a passo da documentação oficial dele. Cada documentação já traz tudo certinho para o seu sistema, então a instalação é tranquila.
-
-### 2️⃣ Configure o DIO Agent
-
-Agora você vai baixar este repositório para o seu computador. Escolha a forma mais simples para você:
-
-**Opção A: com Git** (se você já usa Git)
-
-```bash
-git clone https://github.com/digitalinnovationone/dio-agent.git
-```
-
-**Opção B: baixando o .zip** (se você não usa Git)
-
-Na página do repositório no GitHub, clique no botão verde **Code** e depois em **Download ZIP**. Em seguida, extraia a pasta em um lugar fácil de encontrar.
-
-Com o repositório baixado, abra a pasta `dio-agent` no harness que você instalou. Cada harness tem o seu jeito de abrir uma pasta de projeto, e a documentação dele mostra como fazer isso.
-
-E é só isso! O harness lê automaticamente o arquivo `AGENTS.md` e o agente já sabe quem é: o seu mentor de estudos da DIO.
-
-> 🔄 **Fique de olho nas atualizações.** Não importa se você usou o Git ou o .zip: o repositório do DIO Agent evolui com o tempo. De tempos em tempos, vale voltar aqui e pegar a versão mais recente. Quem usou Git pode rodar `git pull` (ou pedir pro próprio DIO Agent rodar); quem baixou o .zip pode baixar de novo. Assim o seu mentor está sempre com o melhor que a gente tem a oferecer.
-
-### 3️⃣ Hands On!
-
-Agora é só conversar. Você pode falar naturalmente, com as suas palavras. Mas, principalmente nas primeiras vezes, vale usar um modelo de prompt pronto: é só copiar e preencher os campos entre colchetes. Quanto mais contexto você dá, melhor o agente ajuda.
-
-**🗺️ Plano de estudos**
-
-```
-Quero montar um plano de estudos (se possível, com materiais complementares).
-- Meu objetivo: [ex: aprender mais sobre IA, ser dev back-end, concluir um bootcamp]
-- Experiência ou carreira da DIO: [URL ou nome do bootcamp/formação, ou de uma carreira da DIO]
-- Meu nível hoje: [iniciante, intermediário, avançado]
-- Tempo disponível: [ex: 1 hora por dia, de segunda a sexta]
-```
-
-**🔓 Destravar desafio**
-
-```
-Estou travado em um Desafio de [Código, Projeto ou Criativo] da DIO.
-- O que o desafio pede: [cole o enunciado ou descreva]
-- Onde eu travei: [explique o ponto da dificuldade]
-- Meu código atual: [cole aqui, se for Desafio de Código]
-- Link do repositório base: [cole aqui, se for Desafio de Projeto]
-Me ajuda a destravar sem dar a resposta pronta.
-```
-
-**💡 Explicar conceito**
-
-```
-Me explica o conceito de [ex: API, laço de repetição, herança].
-- Meu nível: [nunca vi, já ouvi falar, quero aprofundar]
-- Onde apareceu: [ex: no curso X de um bootcamp] (opcional)
-```
-
-Não precisa de comando especial nem de formato perfeito: o agente conduz a conversa a partir daí e pede mais detalhes se precisar.
+| Fonte | Formato | Papel no Segundo Cérebro | Por que é Confiável? |
+|---|---|---|---|
+| **Téo Me Why (Téo Calvo) - Cursos & Repositórios Práticos** | Vídeo / Repositórios GitHub (`.py` e `.ipynb`) | Engenharia de Features, criação de ABT (*Analytical Base Table*), divisão temporal (Out-of-Time) e MLOps prático. | Profissional de mercado com anos de experiência em engenharia de dados/ML aplicada a transações financeiras e modelos reais; forte foco em anti-padrões e dados reais. |
+| **Scikit-Learn Official User Guide (Preprocessing & Pipelines)** | Documentação Técnica Oficial (Texto/Web) | Padrões de API para persistência de estado (`fit`, `transform`), `ColumnTransformer`, `Pipeline` e transformadores customizados. | Documentação canônica mundial mantida pelo comitê técnico do Scikit-Learn, livre de desvios e erros de arquitetura. |
+| **Metodologia SEMMA (SAS Institute) & Boas Práticas de Mineração** | Artigos / Especificações Teóricas (Texto) | Estrutura formal das 5 fases do ciclo analítico (*Sample, Explore, Modify, Model, Assess*). | Framework clássico de governança analítica amplamente validado na indústria de tecnologia e dados para mitigação de riscos de modelagem. |
 
 ---
 
-## 🧩 As skills do agente
+## 🧭 3. Diretriz de Comportamento (System Prompt)
 
-Uma **skill** é uma habilidade do agente, descrita em um guia passo a passo. O DIO Agent vem com três:
+Para instruir o modelo a se comportar com rigor técnico sênior, a seguinte diretriz foi atribuída ao Gemini NotebookLM:
 
-| Skill | Para que serve |
-|-------|----------------|
-| [Plano de estudos](skills/study-plan/SKILL.md) | Organiza o que estudar, em que ordem e em quanto tempo |
-| [Destravar desafio](skills/unblock-challenge/SKILL.md) | Conduz você até a solução de um desafio, sem dar a resposta pronta |
-| [Explicar conceito](skills/explain-concept/SKILL.md) | Explica conceitos de forma didática, com analogias e exemplos |
-
-Você não precisa "chamar" uma skill. O agente percebe o que você precisa e usa a skill certa sozinho.
-
----
-
-## 🗂️ Estrutura do repositório
-
-```
-dio-agent/
-├── README.md                        Este guia
-├── AGENTS.md                        Definição do agente (lida por qualquer harness)
-├── CLAUDE.md                        Atalho para o Claude Code
-│
-├── agent/
-│   ├── persona.md                   A personalidade e o tom do agente
-│   └── knowledge/
-│       ├── dio-platform.md          O que é a DIO
-│       └── learning-experiences.md  Os formatos de aprendizado da DIO
-│
-├── skills/
-│   ├── README.md                    O que são skills
-│   ├── study-plan/                  Skill: plano de estudos
-│   ├── unblock-challenge/           Skill: destravar desafio
-│   └── explain-concept/             Skill: explicar conceito
-│
-└── docs/
-    └── glossary.md                  Glossário de termos
+```text
+Atue como um Especialista Sênior em Engenharia de Machine Learning e Governança de Dados.
+Ao responder:
+1. Baseie-se estritamente nas fontes fornecidas neste notebook.
+2. Priorize o rigor metodológico: separação explícita entre conjuntos de Treino, Teste e Out-of-Time (OOT), sem tolerância a data leakage.
+3. Conecte diagnósticos visuais e exploratórios a transformações em código estruturado (Pipelines e ColumnTransformer do Scikit-Learn).
+4. Explique decisões analíticas fundamentando-se no ciclo SEMMA e nos trade-offs fundamentais (Interpretabilidade vs. Desempenho e Viés vs. Variância).
+5. Mostre explicitamente a fonte e a fundamentação de onde cada resposta foi extraída.
 ```
 
-> 🔍 **Por que funciona em qualquer harness?** O coração do projeto é o arquivo `AGENTS.md`, um padrão aberto que harnesses modernos sabem ler. O `CLAUDE.md` apenas aponta para ele, então você pode usar o harness que preferir.
+---
+
+## 💬 4. Conversas com as Fontes (Perguntas, Respostas e Citações)
+
+Abaixo estão consultas reais realizadas com o Segundo Cérebro, demonstrando a rastreabilidade e fundamentação estrita nas fontes:
+
+### Pergunta 1: Estruturação de ABT e Prevenção de Data Leakage
+- **Pergunta:** *"Como devo estruturar a Analytical Base Table (ABT) e o split dos dados para garantir que transformações numéricas e categóricas não vazem dados do futuro?"*
+- **Resposta Síntese:** A ABT precisa consolidar os dados na granularidade exata da entidade analisada, com uma foto temporal no instante $t_0$. Toda amostragem para validação deve utilizar separação temporal (Out-of-Time) além do split tradicional de treino/teste. No pré-processamento, qualquer método que aprenda parâmetros (médias para imputação, limites de escalonamento ou vocabulário de *one-hot encoding*) deve executar o método `.fit()` exclusivamente sobre a partição de treino. A partição de avaliação (teste/OOT) e os dados de inferência futura recebem apenas o `.transform()`, garantindo o encapsulamento dentro de `Pipeline` e impedindo a contaminação.
+- **Fontes Citadas:** *[Téo Me Why - Aulas de ABT e Ciclo de ML]* e *[Documentação Oficial Scikit-Learn: Composite Estimators and Pipeline Anti-Leakage]*.
+
+### Pergunta 2: Ciclo Analítico SEMMA e a Etapa 'Modify'
+- **Pergunta:** *"Como as 5 etapas do framework SEMMA organizam o fluxo de pré-processamento e modelagem?"*
+- **Resposta:** O ciclo se divide em:
+  1. **Sample (Amostragem):** Estruturação da ABT e separação estrita de treino, teste e OOT.
+  2. **Explore (Exploração):** Análise exploratória descritiva e bivariada para identificação de outliers, nulos e correlações primárias.
+  3. **Modify (Modificação):** Engenharia de variáveis, imputação, discretização (*binning*), codificação de categorias e padronização escalar (`StandardScaler`, `TargetEncoding`).
+  4. **Model (Modelagem):** Treinamento supervisionado com busca de hiperparâmetros (GridSearch) integrada com validação cruzada *K-Fold*.
+  5. **Assess (Avaliação):** Medição de métricas de negócio e erro (ROC-AUC, Matriz de Confusão, Log-Loss e RMSE) e salvamento de artefatos de deploy (ex: MLflow/Pickle).
+- **Fontes Citadas:** *[Metodologia SEMMA - SAS Institute]* e *[Mapa Mental: Governança de Dados, Modelos e Decisão em Machine Learning]*.
+
+### Pergunta 3: Dilema Viés-Variância e Interpretabilidade
+- **Pergunta:** *"Quando devo priorizar modelos interpretáveis em detrimento de modelos de alta complexidade?"*
+- **Resposta:** Modelos interpretáveis (Regressão Linear, Logística, Árvores de Decisão rasas) oferecem regras explícitas, facilidade de auditoria, baixo custo computacional e funcionam bem em bases pequenas, embora sejam suscetíveis a alto viés (*underfitting*). Já modelos de alta capacidade (Redes Neurais, Ensembles como Random Forest/Gradient Boosting) possuem baixo viés, mas alta propensão à variância (*overfitting*) e operam como caixas-pretas. Deve-se priorizar modelos interpretáveis em setores regulados (compliance, análise causal, crédito) e modelos complexos quando a precisão preditiva marginal em dados não estruturados ou massivos supera a necessidade de explicabilidade direta.
+- **Fontes Citadas:** *[Infográfico: Interpretabilidade vs. Desempenho e o Dilema Viés-Variância]* e *[Apresentação: Pipelines de Machine Learning Anti-Vazamento]*.
 
 ---
 
-## 📖 Glossário rápido
+## 📦 5. Artefatos e Materiais Gerados no Estúdio
 
-Termos como *agente*, *harness*, *skill* e *prompt* estão explicados com analogias simples no **[Glossário completo](docs/glossary.md)**. Se algum termo soar estranho, comece por lá.
+Todos os materiais gerados a partir do Gemini NotebookLM estão versionados na pasta local [`conteudos-notebook/`](conteudos-notebook/):
+
+1. **🗺️ Mapa Mental:**
+   - [`conteudos-notebook/NotebookLM Mind Map.png`](conteudos-notebook/NotebookLM%20Mind%20Map.png)
+   - *Visão sistêmica da governança de dados, framework SEMMA, seleção de modelos e tomada de decisão operacional.*
+
+2. **📊 Infográficos Diagnósticos:**
+   - [`conteudos-notebook/Taxonomia_e_Ciclo_do_Aprendizado.png`](conteudos-notebook/Taxonomia_e_Ciclo_do_Aprendizado.png)
+     - *Guia visual comparativo de tipos de aprendizado, métodos e boas práticas anti-vazamento.*
+   - [`conteudos-notebook/Interpretabilidade_vs._Desempenho_no_Aprendizado.png`](conteudos-notebook/Interpretabilidade_vs._Desempenho_no_Aprendizado.png)
+     - *Trade-off entre explicabilidade vs. caixas-pretas e curva de equilíbrio do Bias-Variance Trade-off.*
+
+3. **📑 Apresentação de Slides (PDF):**
+   - [`conteudos-notebook/Pipelines_de_Machine_Learning_Anti-Vazamento.pdf`](conteudos-notebook/Pipelines_de_Machine_Learning_Anti-Vazamento.pdf)
+     - *Deck completo de 14 slides sobre construção de pipelines anti-vazamento e reprodutibilidade.*
+
+4. **🎙️ Resumo em Áudio (Podcast / Estúdio):**
+   - [`conteudos-notebook/Teoria_e_comunidade_por_trás_da_IA.m4a`](conteudos-notebook/Teoria_e_comunidade_por_tr%C3%A1s_da_IA.m4a)
+     - *Revisão em formato de áudio comentando a teoria de Machine Learning e o papel do open-source.*
 
 ---
 
-## 💬 Sobre este projeto
+## 🚀 6. Checklist de Conformidade da Entrega
 
-O DIO Agent foi criado para acompanhar você desde o início dos Bootcamps e Formações da DIO. A ideia é simples: aprender na era da IA fica mais fácil quando você tem um mentor disponível a qualquer hora.
-
-Bons estudos, e vem com a gente. 🚀
+- [x] **Objetivo definido no início em uma frase concisa.**
+- [x] **Fontes curadas em mais de um formato (vídeo, texto, código) com critérios claros de confiabilidade.**
+- [x] **Diretriz de comportamento (System Prompt) documentada.**
+- [x] **Perguntas e respostas com citações explícitas de fontes incluídas.**
+- [x] **Link público do Gemini Notebook disponível:** [Acessar Notebook](https://notebook.google.com/notebook/60c6c132-1a74-4b1d-9e61-d044fed7af9f).
+- [x] **Todos os arquivos citados existem fisicamente no repositório (`conteudos-notebook/`).**
+- [x] **Removidos arquivos não pertinentes ao escopo do desafio.**
